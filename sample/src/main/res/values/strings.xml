@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Trialy Sample</string>
+    <string name="title_activity_main">@string/app_name</string>
+
+    <string name="action_clear_cache">Clear local cache</string>
+    <string name="tvCardShopTitle">My IAP shop</string>
+    <string name="tvShopItemTitle">Premium features</string>
+    <string name="btnStartTrial">Start Trial</string>
+    <string name="btnBuyIap">Buy IAP</string>
+    <string name="btnCheckTrialStatus">Check Trial Status</string>
+    <string name="tvCardPremiumFeaturesTitle">Premium Features</string>
+    <string name="btnUseRocketLauncher">Use Rocket Launcher</string>
+
+</resources>
