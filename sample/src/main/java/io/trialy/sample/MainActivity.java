@@ -1,4 +1,4 @@
-package io.trialy.trialylib;
+package io.trialy.sample;
 
 import android.content.Context;
 import android.os.Bundle;
