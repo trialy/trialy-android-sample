@@ -70,7 +70,7 @@ Add a callback handler:
 To start a trial, call `mTrialy.startTrial("YOUR_TRIAL_SKU", mTrialyCallback);`
 Your app key and trial SKU can be found in your Trialy developer dashboard.
 
-If you're using a "per Google account" trial, also add the `GET_ACCOUNTS` permission to your `AndroidManifest.xml`:
+If you're using a "per Google account" trial, also add the `GET_ACCOUNTS` permission to your `AndroidManifest.xml` (and request it within your app on Android 6.0+):
 
 ```java
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />

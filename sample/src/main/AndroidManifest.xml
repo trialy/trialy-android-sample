@@ -3,6 +3,7 @@
     package="io.trialy.sample">
 
     <!-- Only required if you're using a "per Google Account"-trial -->
+    <!-- On Android 6.0+, your app needs to request this permission -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
