@@ -1,7 +1,7 @@
 Trialy.io Android SDK
 ============
 
-![Logo](http://www.trialy.io/img/ic_launcher.png)
+![Logo](https://www.trialy.io/img/ic_launcher.png)
 
 Trialy makes it super easy to create a free trial for your in-app-purchases. Trialy takes care of the heavy lifting for you (using server-side checks with customizable grace periods to allow offline use, for example) so you can focus on developing an amazing app.
 
@@ -32,7 +32,7 @@ Initialize the library in your main activity's `onCreate()` method:
 
         //Initialize the library and check the current trial status on every launch
         Trialy mTrialy = new Trialy(mContext, "YOUR_TRIALY_APP_KEY");
-        mTrialy.checkTrial(TRIALY_SKU, mTrialyCallback);
+        mTrialy.checkTrial("YOUR_TRIAL_SKU", mTrialyCallback);
     }
 ```
 
@@ -77,4 +77,4 @@ If you're using a "per Google account" trial, also add the `GET_ACCOUNTS` permis
 ```
 
 
- [0]: http://www.trialy.io
+ [0]: https://www.trialy.io
