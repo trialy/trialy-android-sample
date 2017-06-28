@@ -16,7 +16,7 @@ Download
 
 ```groovy
 dependencies {
-  compile 'io.trialy.library:trialy:1.0.3'
+  compile 'io.trialy.library:trialy:1.0.5'
 }
 ```
 
