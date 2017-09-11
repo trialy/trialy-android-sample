@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_clear_cache) {
-            mTrialy.clearLocalCache();
+            mTrialy.clearLocalCache(TRIALY_SKU);
             return true;
         }
         return super.onOptionsItemSelected(item);
