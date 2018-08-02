@@ -117,6 +117,14 @@ public class MainActivity extends AppCompatActivity {
                     //The trial is over - disable the "Start trial"-button
                     disableStartTrialButton();
                     break;
+                case STATUS_TRIAL_RESET:
+                    //The trial has been reset - enable the "Start trial"-button
+                    enableStartTrialButton();
+                    //Disable the premium features
+                    deactivatePremiumFeatures();
+                    //Hide the "Time remaining"-label
+                    updateTimeRemainingLabel(-1);
+                    break;
                 default:
                     Log.e(TAG, "Trialy response: " + Trialy.getStatusMessage(status));
                     break;
@@ -155,6 +163,11 @@ public class MainActivity extends AppCompatActivity {
         llTimeRemaining.setVisibility(View.VISIBLE);
     }
 
+    private void enableStartTrialButton(){
+        Button btnStartTrial = (Button)findViewById(R.id.btnStartTrial);
+        btnStartTrial.setEnabled(true);
+    }
+
     private void disableStartTrialButton(){
         Button btnStartTrial = (Button)findViewById(R.id.btnStartTrial);
         btnStartTrial.setEnabled(false);
@@ -177,9 +190,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_clear_cache) {
-            mTrialy.clearLocalCache(TRIALY_SKU);
-            return true;
+        switch (item.getItemId()){
+            case R.id.action_clear_cache:
+                mTrialy.clearLocalCache(TRIALY_SKU);
+                return true;
+            case R.id.action_reset_trial:
+                mTrialy.resetTrial(TRIALY_SKU, mTrialyCallback);
+                return true;
+
         }
         return super.onOptionsItemSelected(item);
     }

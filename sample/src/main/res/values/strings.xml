@@ -3,6 +3,7 @@
     <string name="title_activity_main">@string/app_name</string>
 
     <string name="action_clear_cache">Clear local cache</string>
+    <string name="action_reset_trial">Reset trial on server</string>
     <string name="tvCardShopTitle">My IAP shop</string>
     <string name="tvShopItemTitle">Premium features</string>
     <string name="btnStartTrial">Start Trial</string>
