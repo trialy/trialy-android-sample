@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "io.trialy.sample"
         minSdkVersion 14
-        targetSdkVersion 28
-        versionCode 3
-        versionName "1.2"
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.3"
     }
     buildTypes {
         release {
@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.+'
-    implementation 'com.android.support:design:28.+'
-    implementation 'com.android.support:cardview-v7:28.+'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
     //Include the library in your app module's build.gradle
     implementation 'io.trialy.library:trialy:1.0.9'
