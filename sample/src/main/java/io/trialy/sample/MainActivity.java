@@ -190,13 +190,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.action_clear_cache:
-                mTrialy.clearLocalCache(TRIALY_SKU);
-                return true;
-            case R.id.action_reset_trial:
-                mTrialy.resetTrial(TRIALY_SKU, mTrialyCallback);
-                return true;
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_clear_cache) {
+            mTrialy.clearLocalCache(TRIALY_SKU);
+            return true;
+        }
+        if (itemId == R.id.action_reset_trial) {
+            mTrialy.resetTrial(TRIALY_SKU, mTrialyCallback);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
