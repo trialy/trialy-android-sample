@@ -7,7 +7,7 @@ android {
     compileSdk = 36
     defaultConfig {
         applicationId "io.trialy.sample"
-        minSdk 21
+        minSdk 23
         targetSdk 36
         versionCode 5
         versionName "1.4"
@@ -31,5 +31,5 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
 
     //Include the library in your app module's build.gradle
-    implementation 'io.trialy.library:trialy:1.0.9'
+    implementation 'io.trialy.library:trialy:1.0.10'
 }
