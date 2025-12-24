@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.trialy.sample">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Only required if you're using a "per Google Account"-trial -->
     <!-- On Android 6.0+, your app needs to request this permission -->

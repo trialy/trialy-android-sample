@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private TrialyCallback mTrialyCallback = new TrialyCallback() {
+    private final TrialyCallback mTrialyCallback = new TrialyCallback() {
         @Override
         public void onResult(int status, long timeRemaining, String sku) {
             Log.i(TAG, "onResult status: " + status + "; time remaining: " + timeRemaining);
