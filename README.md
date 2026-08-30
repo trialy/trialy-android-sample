@@ -16,7 +16,7 @@ Download
 
 ```groovy
 dependencies {
-  implementation 'io.trialy.library:trialy:1.0.10'
+  implementation 'io.trialy.library:trialy:1.0.11'
 }
 ```
 
